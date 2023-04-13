@@ -9,14 +9,20 @@
     "preview": "vite preview",
     "test": "npm run test:unit",
     "test:unit": "vitest dev",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "lint:script": "eslint --fix --ext .ts,vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitest/coverage-istanbul": "^0.30.1",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.38.0",
+    "eslint-plugin-vue": "^9.10.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
     "vitest": "^0.30.1",
