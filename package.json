@@ -11,7 +11,8 @@
     "test:unit": "vitest dev",
     "coverage": "vitest run --coverage",
     "lint:script": "eslint --fix --ext .ts,vue --ignore-path .gitignore .",
-    "lint:style": "stylelint src/**/*.{css,scss,vue}"
+    "lint:style": "stylelint src/**/*.{css,scss,vue}",
+    "lint:markup": "vue-tsc --noEmit"
   },
   "husky": {
     "hooks": {
