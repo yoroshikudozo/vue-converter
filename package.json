@@ -10,7 +10,8 @@
     "test": "npm run test:unit",
     "test:unit": "vitest dev",
     "coverage": "vitest run --coverage",
-    "lint:script": "eslint --fix --ext .ts,vue --ignore-path .gitignore ."
+    "lint:script": "eslint --fix --ext .ts,vue --ignore-path .gitignore .",
+    "lint:style": "stylelint src/**/*.{css,scss,vue}"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -26,6 +27,9 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
     "prettier": "^2.8.7",
+    "stylelint": "^15.4.0",
+    "stylelint-config-recommended": "^11.0.0",
+    "stylelint-config-standard": "^32.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.2.0",
     "vitest": "^0.30.1",
