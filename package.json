@@ -13,6 +13,16 @@
     "lint:script": "eslint --fix --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint src/**/*.{css,scss,vue}"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix",
+    "*.{css,scss,vue}": "stylelint --fix",
+    "*": "prettier -w -u"
+  },
   "dependencies": {
     "vue": "^3.2.47"
   },
@@ -26,6 +36,8 @@
     "eslint": "^8.38.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.10.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "stylelint": "^15.4.0",
     "stylelint-config-recommended": "^11.0.0",
